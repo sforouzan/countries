@@ -1,0 +1,81 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.countries {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .country {
+        width: 400px;
+
+        .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: rgb(238, 238, 238);
+            color: black;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        img {
+            height: 50px;
+        }
+        .fields {
+            p:last-child {
+                text-align: left;
+            }
+        }
+        .field {
+            display: flex;
+            font-size: 1rem;
+            > span {
+                flex: 1;
+                flex-basis: 50%;
+                text-align: left;
+            }
+            > span:first-child {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.filter-sort {
+    margin-bottom: 2rem;
+    > div {
+        display: flex;
+        gap: 1rem;
+        > div {
+            > p {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.field-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.sort-option {
+    input {
+        margin-right: 0;
+    }
+    label {
+        padding-left: 4px;
+    }
+    input,
+    label {
+        cursor: pointer;
+    }
+}
+
+.top10-sort > div {
+    text-align: left;
+}
