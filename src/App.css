@@ -1,23 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 #root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    font-family: "DM Sans", Verdana, Geneva, Tahoma, sans-serif
 }
 
 .countries {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+
     .country {
         width: 400px;
+        border: 2px solid #99c8e5;
+        padding: 1rem;
 
         .title {
             width: 100%;
             display: flex;
             align-items: center;
             gap: 1rem;
-            background-color: rgb(238, 238, 238);
+            background-color: #99c8e5;
             color: black;
             font-weight: bold;
             font-size: 1.2rem;
@@ -50,12 +56,23 @@
     > div {
         display: flex;
         gap: 1rem;
+        justify-content: space-around;
         > div {
             > p {
                 margin: 0;
             }
         }
     }
+}
+
+.page-title {
+    color: #99c8e5;
+    font-size: 4rem;
+}
+
+
+.filter-sort h3 {
+    color: #ffffff;
 }
 
 .field-items {
@@ -76,6 +93,22 @@
     }
 }
 
+.filters p {
+    font-weight: bold;
+}
+
+.sort-option p {
+    font-weight: bold;
+}
+
 .top10-sort > div {
     text-align: left;
+}
+
+.link {
+    color: #99c8e5;
+}
+
+.link:hover {
+    color: #76a2bd;
 }

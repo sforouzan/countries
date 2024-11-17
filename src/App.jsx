@@ -96,9 +96,9 @@ function App() {
 
   return (
     <main>
-      <h1>Countries of the World</h1>
+      <h1 className="page-title">Countries of the World</h1>
       <div className="filter-sort">
-        <h3>Filter & sort</h3>
+        <h3>Filter & Sort</h3>
         <div className="filters">
           <div>
             <p>By continent</p>
@@ -158,7 +158,7 @@ function App() {
             </select>
           </div>
           <div className="sort-option">
-            Sort
+            <p>Sort</p>
             <div>
               <input
                 type="checkbox"
@@ -168,11 +168,11 @@ function App() {
                 }}
                 id="alpha-sort"
               />
-              <label htmlFor="alpha-sort">Alpha</label>
+              <label htmlFor="alpha-sort">A-Z</label>
             </div>
           </div>
           <div className="sort-option top10-sort">
-            Top10
+            <p>Top 10</p>
             <div>
               <input
                 type="checkbox"
@@ -182,7 +182,7 @@ function App() {
                 }}
                 id="top10pop-sort"
               />
-              <label htmlFor="top10pop-sort">by population</label>
+              <label htmlFor="top10pop-sort">By population</label>
             </div>
             <div>
               <input
@@ -193,7 +193,7 @@ function App() {
                 }}
                 id="top10area-sort"
               />
-              <label htmlFor="top10area-sort">by area</label>
+              <label htmlFor="top10area-sort">By area</label>
             </div>
           </div>
         </div>

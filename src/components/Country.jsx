@@ -20,7 +20,7 @@ export const Country = ({ country }) => {
         </p>
 
         <p className="field">
-          <span>Caspanital:</span>
+          <span>Capital:</span>
           <span>{country.capital}</span>
         </p>
 
@@ -70,7 +70,7 @@ export const Country = ({ country }) => {
         </p>
 
         <p>
-          <a href={country.maps.googleMaps} target="_blank">
+          <a className="link" href={country.maps.googleMaps} target="_blank">
             Show on Google Maps
           </a>
         </p>
